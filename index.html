@@ -4,36 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css file  -->
     <link rel="stylesheet" href="style.css" />
     <title>Ios Calculator</title>
   </head>
   <body>
     <div class="container">
       <div class="innerContainer">
-        <div class="button1 btn">1</div>
-        <div class="button2 btn">2</div>
-        <div class="button3 btn">3</div>
-        <div class="button4 btn">4</div>
-        <div class="button5 btn">5</div>
-        <div class="button6 btn">6</div>
-        <div class="button7 btn">7</div>
-        <div class="button8 btn">8</div>
-        <div class="button9 btn">9</div>
-        <div class="button10 btn">10</div>
-        <div class="button11 btn">11</div>
-        <div class="button12 btn">12</div>
-        <div class="button13 btn">13</div>
-        <div class="button14 btn">14</div>
-        <div class="button15 btn">15</div>
-        <div class="button16 btn">16</div>
-        <div class="button17 btn">17</div>
-        <div class="button18 btn">18</div>
-        <div class="button19 btn">19</div>
-        <div class="button20 btn">20</div>
-        <div class="button21 btn">21</div>
+        <button value="" class="button1 btn"></button>
+        <button value="" class="button2 btn"></button>
+        <button class="operand button3 btn">AC</button>
+        <button value="±" class="operand button4 btn">±</button>
+        <button value="%" class="operand button5 btn">%</button>
+        <button value="/" class="operand button6 btn">÷</button>
+        <button value="7" class="num button7 btn">7</button>
+        <button value="8" class="num button8 btn">8</button>
+        <button value="9" class="num button9 btn">9</button>
+        <button value="*" class="operand button10 btn">x</button>
+        <button value="4" class="num button11 btn">4</button>
+        <button value="5" class="num button12 btn">5</button>
+        <button value="6" class="num button13 btn">6</button>
+        <button value="-" class="operand button14 btn">-</button>
+        <button value="1" class="num button15 btn">1</button>
+        <button value="2" class="num button16 btn">2</button>
+        <button value="3" class="num button17 btn">3</button>
+        <button value="+" class="operand button18 btn">+</button>
+        <button value="0" class="num button19 btn">
+          <span class="btn19">0</span>
+        </button>
+        <button class="button20 btn">.</button>
+        <button value="=" class="operand button21 btn">=</button>
       </div>
     </div>
-
+    <!-- js file  -->
     <script src="App.js"></script>
   </body>
 </html>
