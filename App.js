@@ -87,6 +87,8 @@ innerContainer.addEventListener('click', (e) => {
   console.log(arr1);
   console.log(arr2);
   btn1.innerText =
-    arr2 == '' ? arr1.join('') : arr1.join('') + arr + arr2.join('');
-  btn2.innerText = arr1.join('');
+    arr2 == ''
+      ? arr1.join('')
+      : arr1.join('') + ' ' + arr + ' ' + arr2.join('');
+  btn2.innerText = arr2 == '' ? arr1.join('') : arr2.join('');
 });
