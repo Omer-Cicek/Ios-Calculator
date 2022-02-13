@@ -8,22 +8,23 @@ const operands = document.querySelectorAll('.operand');
 let arr = [];
 let arr1 = [];
 let arr2 = [];
-//kontrol fonksiyonu
+//conrtol function
 const controlFunction = () => {
+  //plus operand
   if (arr[0] == '+') {
     let ömer = +arr1.join('') + +arr2.join('');
     arr1 = [ömer];
     arr2 = [];
     console.log(arr1);
     console.log(arr2);
-  }
+  } //minus operand
   if (arr[0] == '-') {
     let ömer = +arr1.join('') - +arr2.join('');
     arr1 = [ömer];
     arr2 = [];
     console.log(arr1);
     console.log(arr2);
-  }
+  } //multiply operand
   if (arr[0] == '*') {
     let ömer = +arr1.join('') * (+arr2.join('') == 0 ? 1 : +arr2.join(''));
     console.log(ömer);
@@ -31,7 +32,7 @@ const controlFunction = () => {
     arr2 = [];
     console.log(arr1);
     console.log(arr2);
-  }
+  } //divide operand
   if (arr[0] == '/') {
     let ömer = +arr1.join('') / (+arr2.join('') == 0 ? 1 : +arr2.join(''));
     arr1 = [ömer];
@@ -39,6 +40,7 @@ const controlFunction = () => {
     console.log(arr1);
     console.log(arr2);
   }
+  //Mod operand
   if (arr[0] == '%') {
     let ömer = +arr1.join('') % +arr2.join('');
     console.log(typeof ömer);
@@ -47,45 +49,39 @@ const controlFunction = () => {
     }
     arr1 = [ömer];
     arr2 = [];
-    console.log(arr);
-    console.log(arr1);
-    console.log(arr2);
   }
 };
 //AddEventListener Function
 innerContainer.addEventListener('click', (e) => {
-  //tıklanan nesnenin classında operand varsa
+  //if clicked button contains operand className
   if (e.target.classList.contains('operand')) {
     arr.push(e.target.value);
   }
-  //arr dosyasında operand olmadığında arr1 e pushla
+  //push nums to arr1 if arr has no operand
   if (arr.length == 0) {
     arr1.push(e.target.value);
   }
-  //arr dosyasında operand olduğunda arr2 e pushla
+  //push nums to arr2 if arr has operand
   if (arr.length == 1 && e.target.classList.contains('num')) {
     arr2.push(e.target.value);
   }
 
-  //eğer ki arr de 1 den fazla operand varsa
+  //if more than one operand
   if (arr.length >= 2) {
     controlFunction();
     arr.shift();
-    console.log(arr);
   }
-  //eşittire basınca
+  // when click =
   if (e.target.value == '=') {
     controlFunction();
   }
-  // ac basınca
+  // when click AC
   if (e.target.value == 'ac') {
     arr = [];
     arr1 = [];
     arr2 = [];
   }
-  console.log(arr);
-  console.log(arr1);
-  console.log(arr2);
+  //display
   btn1.innerText =
     arr2 == ''
       ? arr1.join('')
