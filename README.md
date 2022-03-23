@@ -1,18 +1,18 @@
 # Ios-Calculator
 
-![Design preview for the IOS Calculator](./design/desktop-preview.jpg)
+![Design preview for the IOS Calculator](IOSCalculator.gif)
 
 ## Welcome! 👋
 
-Thanks to visit my Github! In this project, i used flexbox. This project is created with HTML and CSS. Here is the link for this project (https://omer-cicek.github.io/Etherium-Project/)
+Thanks to visit my Github! In this project, i used grid. This project is created with HTML, CSS and JavaScript. Here is the link for this project (https://omer-cicek.github.io/Ios-Calculator/)
 
-**To do this project, i used basic HTML and CSS.**
+**To do this project, i used basic HTML, CSS and JavaScript.**
 
 ## The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- Calculate mathematical problems
 
 ## Got feedback for me?
 
